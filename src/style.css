@@ -1,0 +1,124 @@
+* {
+  padding: 0;
+  margin: 0;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+}
+
+:root {
+  --primary: #A84fff;
+  --secondary: #D81E5B;
+  --dark: #131a26;
+  --light: #EEE;
+  --grey: #888;
+  --font: 'Fira Sans', sans-serif;
+  --font-quote: "Fira Code", monospace;
+}
+
+body {
+  height: 100vh;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  color: var(--light);
+}
+
+body .wrapper {
+  position: relative;
+  width: 600px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
+body .wrapper .author {
+  position: absolute;
+  top: 0;
+  left: 0;
+  background: var(--primary);
+  border-radius: 20px;
+  max-width: 360px;
+  font-size: 1.4rem;
+  font-weight: bold;
+  display: inline-block;
+  padding: 0.75rem 1.5rem;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-transform: translate(-30%, -60%);
+          transform: translate(-30%, -60%);
+  white-space: nowrap;
+  text-overflow: ellipsis;
+  overflow: hidden;
+  letter-spacing: 1px;
+}
+
+body .wrapper .quote {
+  position: relative;
+  width: 100%;
+  background: var(--dark);
+  padding: 40px;
+  border-radius: 20px;
+  font-size: 30px;
+  font-family: var(--font-quote);
+  -webkit-box-shadow: 0 10px 10px #ccc;
+          box-shadow: 0 10px 10px #ccc;
+}
+
+body .wrapper .date-modify {
+  position: absolute;
+  right: 0;
+  bottom: 0;
+  max-width: 200px;
+  background: var(--secondary);
+  border-radius: 20px;
+  padding: 0.75rem 1.5rem;
+  font-size: 1.4rem;
+  font-weight: bold;
+  display: inline-block;
+  -webkit-transform: translate(40%, 40%);
+          transform: translate(40%, 40%);
+  font-size: 1.2rem;
+  white-space: nowrap;
+  text-overflow: ellipsis;
+  overflow: hidden;
+  letter-spacing: 1px;
+}
+
+body .wrapper .btn-new-quote {
+  background: var(--primary);
+  border: none;
+  outline: none;
+  font-size: 1.4rem;
+  color: var(--light);
+  padding: 1rem 2rem;
+  border-radius: 30px;
+  font-size: 1.5rem;
+  cursor: pointer;
+  margin-top: 50px;
+}
+
+body .wrapper .btn-new-quote:hover {
+  -webkit-box-shadow: 0 5px 5px #ccc;
+          box-shadow: 0 5px 5px #ccc;
+}
+/*# sourceMappingURL=style.css.map */

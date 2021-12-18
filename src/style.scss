@@ -1,0 +1,98 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+:root{
+    --primary: #A84fff;
+    --secondary: #D81E5B;
+    --dark: #131a26;
+    --light: #EEE;
+    --grey: #888;
+
+    --font: 'Fira Sans', sans-serif;
+    --font-quote: "Fira Code", monospace;
+}
+
+body{
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: var(--light);
+    .wrapper{
+        position: relative;
+        width: 600px;
+        display: flex;
+        flex-direction:column;
+        align-items: center;
+        justify-content: center;
+        .author{
+            position: absolute;
+            top: 0;
+            left: 0;
+            background: var(--primary);
+            border-radius:20px;
+            max-width:360px;
+            font-size: 1.4rem;
+            font-weight: bold;
+            display: inline-block;
+            padding: 0.75rem 1.5rem;
+            justify-content: center;
+            align-items: center;
+            transform: translate(-30%, -60%);
+             white-space: nowrap;
+             text-overflow: ellipsis;
+             overflow: hidden;
+             letter-spacing: 1px;
+        }
+
+        .quote{
+            position: relative;
+            width: 100%;
+            background: var(--dark);
+            padding: 40px;
+            border-radius:20px;
+            font-size: 30px;
+            font-family: var(--font-quote);
+                box-shadow: 0 10px 10px #ccc;
+
+        }
+
+        .date-modify{
+            position: absolute;
+            right: 0;
+            bottom: 0;
+            max-width: 200px;
+            background: var(--secondary);
+            border-radius:20px;
+            padding:0.75rem 1.5rem;
+            font-size: 1.4rem;
+            font-weight: bold;
+            display: inline-block;
+            transform: translate(40%,40%);
+            font-size: 1.2rem;
+            white-space: nowrap;
+             text-overflow: ellipsis;
+             overflow: hidden;
+             letter-spacing: 1px;
+
+        }
+        .btn-new-quote{
+            background: var(--primary);
+            border:none;
+            outline:none;
+            font-size: 1.4rem;
+            color: var(--light);
+            padding:1rem 2rem;
+            border-radius:30px;
+            font-size: 1.5rem;
+            cursor: pointer;
+            margin-top: 50px;
+            &:hover{
+                box-shadow: 0 5px 5px #ccc;
+            }
+
+        }
+    }
+}
